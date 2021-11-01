@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+  margin: 20px auto;
+  font-family: 'Lato';
+  font-weight: 300;
+  width: 600px;
+  text-align: center;
+}
+
+button {
+  background: cornflowerblue;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'Lato';
+  margin: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background: orange;
+}
+    </style>
+    <title>Hallo</title>
+</head>
+<body style="text-align: center;width:100vw;">
+    <h1 id="welcome">Halooo, gimana kabarnya sehat kah ? pengen cerita nih... boleh kah ?</h1>
+    <h1 style="display: none;" id="tengkyu">Makasiii udh mau dengerin aku tunggu malam ini ya ....</h1>
+    <div>
+      <button onclick="Gamau()" id="second">Gaboleh</button>
+      <button onclick="buttonfunction()" id="third">Boleh :)</button>
+      <script>
+        function buttonfunction (){
+          alert('Jadi gini aku pengen ngomong sesuatu tapi takut kepanjangan mending telpon nanti malam aja deh gimana ? kalau mau kabarin ya huaaa maksa wkwkwkwkwkw');
+          document.getElementById("third").style.display="none";
+          document.getElementById("second").style.display="none";
+          document.getElementById("welcome").style.display="none";
+          document.getElementById("tengkyu").style.display="inline";
+        }
+        function Gamau(){
+          alert('Harus mau pokoknya mwehehhhehe')
+          document.getElementById("second").style.display="none";
+        }
+      </script>
+    </div>
+</body>
+</html>
